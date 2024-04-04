@@ -1,0 +1,584 @@
+.about {
+    padding-bottom: 70px;
+}
+
+.about .about__content figure {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.about .about__content img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about .about__content {
+    font-size: 14px;
+    line-height: 25px;
+    color: #0D0D0D;
+
+}
+
+.about .about__content strong {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-priamry);
+    font-weight: bold;
+}
+
+.about .about__content p strong {
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--color-priamry);
+}
+
+/* product */
+
+.products {
+    padding-bottom: 70px;
+}
+
+.products__desc {
+    font-size: 14px;
+    line-height: 25px;
+    color: #000;
+    font-weight: 500;
+}
+
+.products .products__header.filter {
+    padding: 14px 15px;
+    margin: 32px 0 40px;
+    border-top: 1px solid var(--color-priamry);
+    border-bottom: 1px solid var(--color-priamry);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products .products__header--left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.products .products__header--menu img {
+    width: 26px;
+    height: auto;
+}
+
+.products .products__header--filter img {
+    width: 32px;
+    height: auto;
+}
+
+.products .products__header--right .group-select select {
+    width: 282px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid var(--color-priamry);
+}
+
+.products .products__header--right .group-select label {
+    color: var(--color-priamry);
+    margin-right: 12px;
+}
+
+.products .products__list--title {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.products .product__list .row {
+    margin-right: -6px;
+    margin-left: -6px;
+}
+
+.products .product__list .row > div {
+    padding: 0 8px 22px;
+}
+
+.products .products__content {
+    padding: 18px 8px 28px;
+}
+
+.products .products__category--plus img {
+    width: 12px;
+    height: auto;
+}
+
+.products .products__category--plus:hover {
+    cursor: pointer;
+}
+
+.products .products__category--list {
+    padding: 16px 0 16px;
+}
+
+.products .products__category--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 4px 0;
+    transition: all 0.3s linear;
+}
+
+.products .products__category--item {
+    padding: 0 16px;
+}
+
+.products .products__category--top-link,
+.products .products__category--subitem a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.3s linear;
+}
+
+.products .products__category--subitem a {
+    width: 100%;
+    display: block;
+    padding: 4px 0;
+}
+
+.products .products__category--top-link:hover,
+.products .products__category--subitem a:hover {
+    color: var(--color-priamry);
+    transition: all 0.3s linear;
+}
+
+.products .products__category--subitem {
+    padding: 4px 0 4px 6px;
+    transition: all 0.3s linear;
+}
+
+.products .products__category--subitem:not(:last-child) {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.products .products__category--subitem:hover {
+    transform: translateX(5px);
+    transition: all 0.3s linear;
+}
+
+.products .products__category--top.active {
+    padding-bottom: 0;
+    transition: all 0.3s linear;
+}
+
+.products__category--sublist {
+    height: 0;
+    overflow: hidden;
+}
+
+.products .products__category--sublist.active {
+    margin-bottom: 5px;
+}
+
+.products .products__checkbox {
+    padding: 16px;
+}
+
+.products .products__checkbox label {
+    color: var(--color-priamry);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+  
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+  
+/* Creating a custom checkbox
+based on demand */
+.geekmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid var(--color-priamry);
+}
+
+/* Specify the background color to be
+shown when checkbox is active */
+.products__checkbox label input:active ~ .geekmark {
+    background-color: var(--color-priamry);
+}
+  
+/* Specify the background color to be
+shown when checkbox is checked */
+.products__checkbox label input:checked ~ .geekmark {
+    background-color: var(--color-priamry);
+}
+  
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Display checkmark when checked */
+.products__checkbox label input:checked ~ .geekmark:after {
+    display: block;
+}
+  
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.products__checkbox label .geekmark:after {
+    left: 3px;
+    bottom: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.products .group-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.products .products__checkbox--title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.products .products__category {
+    margin-bottom: 24px;
+}
+
+input[type='checkbox'] {
+    accent-color: var(--color-priamry);
+}
+
+/* detailP */
+
+.detailP .detailP__center {
+    border: 1px solid var(--color-priamry);
+    margin-bottom: 30px;
+}
+
+.detailP .detailP__center--img {
+    overflow: hidden;
+}
+
+.detailP .detailP__center--img img {
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    margin: 0 auto;
+    object-fit: contain;
+    transition: all 0.3s linear;
+}
+
+.detailP .detailP__center--img:hover img {
+    transform: scale(1.04);
+    transition: 0.3s linear all;
+}
+
+.detailP .detailP__slide--item img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin: 0 auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px;
+}
+
+.detailP .detailP__slide {
+    margin: 0 30px;
+}
+
+.detailP .detailP__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailP .detailP__name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--color-priamry);
+    margin-bottom: 8px;
+}
+
+.detailP .detailP__rating--img img {
+    width: 15px;
+}
+
+.detailP .detailP__rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.detailP .detailP__content--group {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.detailP .detailP__content--group strong {
+    font-weight: bold;
+}
+
+.detailP .detailP__content--group .price,
+.detailP .detailP__content--group .status {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.detailP .detailP__content--group .watched {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.detailP .detailP__content--group .price span,
+.detailP .detailP__content--group .status span {
+    color: #F39C11;
+}
+
+.detailP .detailP__contact {
+    background-color: #F39C11;
+    padding: 12px 0 20px;
+    border-radius: 8px;
+    margin-top: 35px;
+    box-shadow: inset 0 0 0 0 var(--color-priamry);
+    color: #fff;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.detailP .detailP__contact:hover {
+    box-shadow: inset 400px 0 0 0 var(--color-priamry);
+}
+
+.detailP .detailP__contact--top {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.detailP .detailP__contact--bottom {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.detailP .detailP__sidebar {
+    border-radius: 8px;
+    border: 1px solid var(--color-priamry);
+}
+
+.detailP .detailP__item--img img {
+    width: 25px;
+    height: auto;
+    transform: translateY(4px);
+}
+
+.detailP .detailP__item {
+    display: flex;
+    align-items: self-start;
+    gap: 12px;
+}
+
+.detailP .detailP__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.detailP .detailP__item--content {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.detailP .detailP__item--content .title {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-priamry);
+}
+
+.detailP .detailP__item--content .desc {
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--color-priamry);
+}
+
+.detailP .detailP__list {
+    padding: 15px;
+    border: 1px solid var(--color-priamry);
+    border-radius: 4px;
+}
+
+.detailP .detailP__desc {
+    padding-top: 60px;
+}
+
+.detailP .detailP__desc--wrap {
+    background-color: #f4f4f4;
+    padding: 30px 46px;
+}
+
+.detailP .detailP__desc--tag {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--color-priamry);
+    padding: 8px 20px;
+    width: fit-content;
+}
+
+.detailP .detailP__desc--heading {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-priamry);
+    margin-bottom: 14px;
+}
+
+.detailP .detailP__desc--heading .text {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-priamry);
+    text-transform: uppercase;
+}
+
+.detailP .detailP__desc--text {
+    color: #888888;
+    font-weight: 500;
+}
+
+.detailP .detailP__desc--text p {
+    margin-bottom: 0;
+}
+
+.detailP .detailP__desc--group:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.detailP .detailP__desc--img {
+    max-width: 60%;
+    margin: 40px auto 0;
+}
+
+.detailP .detailP__desc--img img:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.detailP .detailP__desc--table table {
+    width: 100%;
+}
+
+.detailP .detailP__desc--table table td {
+    border-bottom: 1px solid #767676;
+    color: #767676;
+    font-weight: 600;
+    padding: 12px 0 6px;
+}
+
+.detailP .detailP__desc--table table tr td:first-child,
+.detailP .detailP__desc--table table tr td:nth-child(3) {
+    font-style: italic;
+    color: #FF0000;
+}
+
+@media screen and (max-width: 991px) {
+    .about {
+        padding-bottom: 50px;
+    }
+
+    .products .products__header.filter {
+        flex-direction: column;
+        gap: 20px;
+        align-items: self-start;
+    }
+
+    /* .products .products__content {
+        padding-bottom: 60px;
+    } */
+
+    .pagination {
+        margin-top: 30px;
+    }
+
+    .products .products__content--wrap {
+        padding-bottom: 60px;
+    }
+
+    /* detailP */
+
+    .detailP {
+        padding-bottom: 60px;
+    }
+
+    .detailP .detailP__img,
+    .detailP .detailP__content {
+        margin-bottom: 30px;
+    }
+
+    .detailP .detailP__desc--wrap {
+        padding: 30px 16px;
+    }
+
+    .detailP .detailP__desc--table table td 
+    {
+        width: 200px;
+    }
+
+    .detailP .detailP__center--img img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .detailP .detailP__contact--top {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .detailP .detailP__contact--bottom {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .detailP .detailP__desc--table table td {
+        font-size: 10px;
+    }
+}

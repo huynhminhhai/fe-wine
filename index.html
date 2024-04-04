@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo-header.svg">
+
+    <!-- library -->
+    <link rel="stylesheet" href="./assets/library/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/library/slick/slick/slick.css">
+    <link rel="stylesheet" href="./assets/library/slick/slick/slick-theme.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="blur">
+            <div class="btn-closes-sidebar"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg></div>
+        </div>
+        <div class="header">
+            <div class="header__top--group">
+                <div class="container">
+                    <div class="header__top d-flex align-items-center justify-content-between">
+                        <div class="header__menu--mb d-block d-lg-none">
+                            <img src="./assets/images/menu-header.svg" alt="Menu">
+                        </div>
+                        <div class="header__top--logo">
+                            <a href="/">
+                                <img src="./assets/images/logo-header.svg" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="header__top--form d-none d-lg-block">
+                            <form action="" id="search-form">
+                                <div class="group-input">
+                                    <input type="text" placeholder="Tìm kiếm...">
+                                    <div class="icon-search">
+                                        <img src="./assets/images/search-header.svg" alt="icon search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="header__top--call d-none d-lg-block">
+                            <span>Call: </span>
+                            <a href="tel:0898313314">0898313314</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom--group">
+                <div class="header__bg">
+                    <div class="container">
+                        <div class="header__bottom d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-3 pr-0">
+                                    <div class="header__bottom--dropdown">
+                                        <div class="dropdown-group" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <img class="icon-menu" src="./assets/images/menu-header.svg" alt="Menu">
+                                            <span class="text">Danh sách sản phẩm</span>
+                                        </div>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li class="dropdown-item">
+                                                <div class="dropdown-item--group">
+                                                    <a href="#">
+                                                        RƯỢU WHISKY NHẬT
+                                                    </a>
+                                                    <img src="./assets/images/arrow-wine.svg" alt="Arrow">
+                                                </div>
+                                                <ul class="submenu">
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">Nikka</a>
+                                                    </li>
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">hakushu single malt</a>
+                                                    </li>
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">yamazaki single malt</a>
+                                                    </li>
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">HIBIKI</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <div class="dropdown-item--group">
+                                                    <a href="#">
+                                                        RƯỢU WHISKY CHÂU ÂU
+                                                    </a>
+                                                    <img src="./assets/images/arrow-wine.svg" alt="Arrow">
+                                                </div>
+                                                <ul class="submenu">
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">Nikka</a>
+                                                    </li>
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">hakushu single malt</a>
+                                                    </li>
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">yamazaki single malt</a>
+                                                    </li>
+                                                    <li class="submenu-item">
+                                                        <a class="submenu-link" href="#">HIBIKI</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="header__bottom--menu">
+                                        <ul class="header__bottom--list d-flex align-items-center justify-content-center">
+                                            <li class="header__bottom--item">
+                                                <a href="/" class="header__bottom--link">
+                                                    Trang chủ
+                                                </a>
+                                            </li>
+                                            <li class="header__bottom--item">
+                                                <a href="/about.html" class="header__bottom--link">
+                                                    Giới thiệu
+                                                </a>
+                                            </li>
+                                            <li class="header__bottom--item">
+                                                <a href="/products.html" class="header__bottom--link">
+                                                    Sản Phẩm
+                                                </a>
+                                            </li>
+                                            <li class="header__bottom--item">
+                                                <a href="/purchase.html" class="header__bottom--link">
+                                                    Thu mua rượu
+                                                </a>
+                                            </li>
+                                            <li class="header__bottom--item">
+                                                <a href="/news.html" class="header__bottom--link">
+                                                    Tin tức
+                                                </a>
+                                            </li>
+                                            <li class="header__bottom--item">
+                                                <a href="/contact.html" class="header__bottom--link">
+                                                    Liên hệ
+                                                </a>
+                                            </li>
+                                            <li class="header__bottom--item">
+                                                <a href="/policy.html" class="header__bottom--link">
+                                                    Chính sách
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar d-block d-lg-none">
+            <div class="sidebar__search">
+                <form action="" id="search-form">
+                    <div class="group-input">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <div class="icon-search">
+                            <img src="./assets/images/search-header.svg" alt="icon search">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a class="sidebar__link"><img class="icon-menu" src="./assets/images/menu-header.svg" alt="Menu">
+                        Danh mục sản phẩm</a>
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu--list">
+                            <li class="sidebar__menu--item">
+                                <div class="group">
+                                    <a href="#">
+                                        RƯỢU WHISKY NHẬT
+                                    </a>
+                                    <div class="btn-submenu">
+                                        <img src="./assets/images/arrow-wine.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="sidebar__submenu">
+                                    <ul class="sidebar__submenu--list">
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">Nikka</a>
+                                        </li>
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">hakushu single malt</a>
+                                        </li>
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">yamazaki single malt</a>
+                                        </li>
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">HIBIKI</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar__menu--item">
+                                <div class="group">
+                                    <a href="#">
+                                        RƯỢU WHISKY CHÂU ÂU
+                                    </a>
+                                    <div class="btn-submenu">
+                                        <img src="./assets/images/arrow-wine.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                                <div class="sidebar__submenu">
+                                    <ul class="sidebar__submenu--list">
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">Nikka</a>
+                                        </li>
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">hakushu single malt</a>
+                                        </li>
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">yamazaki single malt</a>
+                                        </li>
+                                        <li class="sidebar__submenu--item">
+                                            <a href="/" class="sidebar__submenu--link">HIBIKI</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/" class="sidebar__link">Trang chủ</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/about.html" class="sidebar__link">Giới thiệu</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/products.html" class="sidebar__link">Sản phẩm</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/purchase.html" class="sidebar__link">Thu mua rượu</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/news.html" class="sidebar__link">Tin tức</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/contact.html" class="sidebar__link">Liên hệ</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/policy.html" class="sidebar__link">Chính sách</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="tel:0898313314" class="sidebar__link">Call: 0898313314</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 pr-0">
+                            <div class="hero__img">
+                                <img src="./assets/images/banner-1.png" alt="Hero Image">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="hero__banner">
+                                <div class="hero__slide">
+                                    <div class="hero__item">
+                                        <img src="./assets/images/banner-2.png" alt="wine">
+                                    </div>
+                                    <div class="hero__item">
+                                        <img src="https://t4.ftcdn.net/jpg/03/64/77/43/360_F_364774380_b7aSo8YimF6RCykzkHVH14vPm7doO4aq.jpg" alt="wine">
+                                    </div>
+                                    <div class="hero__item">
+                                        <img src="https://st2.depositphotos.com/1074442/6836/i/600/depositphotos_68367171-stock-photo-wine-bottles.jpg" alt="wine">
+                                    </div>
+                                </div>
+                                <div class="hero__arrows">
+                                    <div class="prev-btn"><img src="./assets/images/hero-arrow-left.svg" alt="Arrow">
+                                    </div>
+                                    <div class="next-btn"><img src="./assets/images/hero-arrow-right.svg" alt="Arrow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="special">
+            <div class="container">
+                <div class="speacial__list">
+                    <div class="special__item">
+                        <div class="specail__item--img">
+                            <img src="./assets/images/icon-quality.svg" alt="Quality">
+                        </div>
+                        <div class="special__item--content">
+                            <p class="title">CHẤT LƯỢNG NHẬT BẢN</p>
+                            <p class="desc">100% Sản phẩm được mua tại nhật</p>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="special__item">
+                        <div class="specail__item--img">
+                            <img src="./assets/images/icon-truck.svg" alt="Shipping">
+                        </div>
+                        <div class="special__item--content">
+                            <p class="title">GIAO HÀNG NHANH CHÓNG</p>
+                            <p class="desc">Giao hàng hCM trong 60 phút</p>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="special__item">
+                        <div class="specail__item--img">
+                            <img src="./assets/images/icon-bag.svg" alt="Quality">
+                        </div>
+                        <div class="special__item--content">
+                            <p class="title">ĐỊNH GIÁ - THU MUA RƯỢU TOÀN QUỐC</p>
+                            <!-- <p class="desc">100% Sản phẩm được mua tại nhật</p> -->
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="special__item">
+                        <div class="specail__item--img">
+                            <img src="./assets/images/icon-box.svg" alt="Noity">
+                        </div>
+                        <div class="special__item--content">
+                            <p class="title">sản phẩm không dành cho</p>
+                            <p class="desc">Người dưới 18 tuổi hoặc đang có thai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="event">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pr-lg-2">
+                        <div class="event__item">
+                            <a href="#" class="event__link">
+                                <img src="./assets/images/event-banner-1.png" alt="event">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-lg-2">
+                        <div class="event__item">
+                            <a href="#" class="event__link">
+                                <img src="./assets/images/event-banner-2.png" alt="event">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products__header">
+                    <h2 class="heading">Sản phẩm bán chạy</h2>
+                    <div class="products__pagi">
+                        <div class="hori-line"></div>
+                        <div class="products__arrows">
+                            <div class="prev-btn-products"><img src="./assets/images/icon-prev.svg" alt="icon prev">
+                            </div>
+                            <div class="next-btn-products"><img src="./assets/images/icon-next.svg" alt="icon next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__list">
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                Rượu Hibiki Harmony Limited 2021 Ryusui-Hyakka
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client">
+            <div class="container">
+                <div class="cilent__container">
+                    <div class="client__img">
+                        <img src="https://img.freepik.com/free-photo/top-view-delicious-organic-wine-grapes_23-2148722561.jpg?w=2000"
+                            alt="Wine">
+                    </div>
+                    <div class="client__content">
+                        <div class="client__avatar">
+                            <img src="./assets/images/client-1.png" alt="Client">
+                        </div>
+                        <p class="client__name">Dimoni gtheva ( web designer )</p>
+                        <p class="client__review">“ Chunks as necessary, making this the first true generator on the
+                            Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+                            structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
+                            Ipsum is therefore always ”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products__header">
+                    <h2 class="heading">sản phẩm MỚI</h2>
+                    <div class="products__pagi">
+                        <div class="hori-line"></div>
+                        <div class="products__arrows">
+                            <div class="prev-btn-products"><img src="./assets/images/icon-prev.svg" alt="icon prev">
+                            </div>
+                            <div class="next-btn-products"><img src="./assets/images/icon-next.svg" alt="icon next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__list">
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                Rượu Hibiki Harmony Limited 2021 Ryusui-Hyakka
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="event">
+            <div class="container">
+                <div class="row">
+                    <div class="pr-2 pr-lg-auto col-6 col-lg-3 pr-lg-2">
+                        <div class="event__item">
+                            <a href="#" class="event__link">
+                                <img src="./assets/images/event-banner-6.png" alt="event">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="order-1 order-lg-auto col-lg-6 px-lg-2">
+                        <div class="event__item">
+                            <a href="#" class="event__link">
+                                <img src="./assets/images/event-banner-4.png" alt="event">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pl-2 pl-lg-auto col-6 col-lg-3 pl-lg-2">
+                        <div class="event__item">
+                            <a href="#" class="event__link">
+                                <img src="./assets/images/event-banner-5.png" alt="event">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products__header">
+                    <h2 class="heading">sản phẩm đang khuyến mãi</h2>
+                    <div class="products__pagi">
+                        <div class="hori-line"></div>
+                        <div class="products__arrows">
+                            <div class="prev-btn-products"><img src="./assets/images/icon-prev.svg" alt="icon prev">
+                            </div>
+                            <div class="next-btn-products"><img src="./assets/images/icon-next.svg" alt="icon next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__list">
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                Rượu Hibiki Harmony Limited 2021 Ryusui-Hyakka
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img">
+                            <a href="#">
+                                <img src="./assets/images/product-1.png" alt="Wine">
+                            </a>
+                        </div>
+                        <div class="products__content">
+                            <div class="products__rate">
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                                <div class="products__rate--star">
+                                    <img src="./assets/images/icon-star.svg" alt="star">
+                                </div>
+                            </div>
+                            <a href="#" class="products__name">
+                                RƯỢU MACALLAN M BLACK
+                            </a>
+                            <p class="products__price">
+                                200.000.000đ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="products__header">
+                    <h2 class="heading">Tin tức</h2>
+                    <div class="products__pagi">
+                        <div class="hori-line"></div>
+                        <div class="products__arrows">
+                            <div class="prev-btn-products prev-btn-news"><img src="./assets/images/icon-prev.svg" alt="icon prev">
+                            </div>
+                            <div class="next-btn-products next-btn-news"><img src="./assets/images/icon-next.svg" alt="icon next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__list">
+                    <div class="news__wrap">
+                        <div class="news__item">
+                            <div class="news__item--img">
+                                <img src="./assets/images/news-img-1.png" alt="News">
+                            </div>
+                            <div class="news__item--content">
+                                <span class="news__date">17 Feb</span>
+                                <h5 class="news__name">This is Fourth Post For XipBlog</h5>
+                                <div class="news__desc">
+                                    <p>Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been ...</p>
+                                </div>
+                                <a href="#" class="news__link">
+                                    xem thêm
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__wrap">
+                        <div class="news__item">
+                            <div class="news__item--img">
+                                <img src="./assets/images/news-img-2.png" alt="News">
+                            </div>
+                            <div class="news__item--content">
+                                <span class="news__date">17 Feb</span>
+                                <h5 class="news__name">This is Fourth Post For XipBlog</h5>
+                                <div class="news__desc">
+                                    <p>Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been ...</p>
+                                </div>
+                                <a href="#" class="news__link">
+                                    xem thêm
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__wrap">
+                        <div class="news__item">
+                            <div class="news__item--img">
+                                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/bucks/wine-flight_77DDDF36-5056-A36A-0BAD8D94C3385682_77eb2e99-5056-a36a-0b77288b67f2aff7.jpg" alt="News">
+                            </div>
+                            <div class="news__item--content">
+                                <span class="news__date">17 Feb</span>
+                                <h5 class="news__name">This is Fourth Post For XipBlog</h5>
+                                <div class="news__desc">
+                                    <p>Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been ...</p>
+                                </div>
+                                <a href="#" class="news__link">
+                                    xem thêm
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brand">
+            <div class="container">
+                <div class="brand__list">
+                    <div class="brand__item">
+                        <img src="./assets/images/brand-1.svg" alt="Brand">
+                    </div>
+                    <div class="brand__item">
+                        <img src="./assets/images/brand-2.svg" alt="Brand">
+                    </div>
+                    <div class="brand__item">
+                        <img src="./assets/images/brand-3.svg" alt="Brand">
+                    </div>
+                    <div class="brand__item">
+                        <img src="./assets/images/brand-4.svg" alt="Brand">
+                    </div>
+                    <div class="brand__item">
+                        <img src="./assets/images/brand-5.svg" alt="Brand">
+                    </div>
+                    <div class="brand__item">
+                        <img src="./assets/images/brand-6.svg" alt="Brand">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="footer__logo">
+                            <img src="./assets/images/logo-footer.svg" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="footer__infor">
+                            <div class="row">
+                                <div class="col-md-7 mb-4 mb-md-0">
+                                    <p class="footer__infor--heading">THU MUA RƯỢU NGOẠI TOÀN QUỐC</p>
+                                    <p class="footer__infor--desc">Đánh Giá Rượu chuyên THU MUA - TRAO ĐỔI rượu ngoại
+                                        MỚI & CŨ (5% độ cồn) tại TPHCM, Hà Nội và các tỉnh thành trên cả nước.</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="footer__infor--heading">
+                                        Liên hệ với tôi
+                                    </p>
+                                    <ul class="footer__infor--list">
+                                        <li class="footer__infor--item">
+                                            0898313314
+                                        </li>
+                                        <li class="footer__infor--item">
+                                            SÂN BAY TÂN SƠN NHẤT - TÂN BÌNH - HCM
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <div class="footer__infor--desc">
+                                        <p>Tuân thủ Nghị định số 17/2020/NĐ-CP của Bộ Công Thương và Nghị định số
+                                            24/2020/NĐ-CP của Chính phủ, danhgiaruou.com cam kết không liên kết, quảng
+                                            bá sản phẩm đến các tài khoản người dùng chưa đủ 18 tuổi, phụ nữ mang thai.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer__map">
+                            <div class="footer__infor--heading">Vị trí của tôi</div>
+                            <div class="footer__map--iframe">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7838.230187396527!2d106.64873339357912!3d10.802496200000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529cf5519c419%3A0x38a9886430cd8a6c!2sHibiki%20-%20Yamazaki%20-%20Hakushu%20-%20Whisky%20Nh%E1%BA%ADt%20B%E1%BA%A3n!5e0!3m2!1svi!2s!4v1687965791861!5m2!1svi!2s"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- library -->
+<script src="./assets/library/jquery/jquery.min.js"></script>
+<script src="./assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/library/slick/slick/slick.min.js"></script>
+<script src="./assets/library/validate/jquery.validate.js"></script>
+
+<!-- js -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/home.js"></script>
+
+</html>

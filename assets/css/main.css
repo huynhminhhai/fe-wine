@@ -1,0 +1,734 @@
+:root {
+    --color-priamry: #681446;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+        url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+        url('../fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+        url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* width */
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+body::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+  
+  /* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+main {
+    padding-top: 172px;
+}
+
+.blur {
+    display: block;
+    content: "";
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.blur.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s linear;
+}
+
+.blur .btn-closes-sidebar {
+    position: absolute;
+    top: 74px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur .btn-closes-sidebar svg {
+    color: #fff;
+}
+
+.heading {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: var(--color-priamry);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.heading--global {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: bold;
+    color: var(--color-priamry);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.desc--global {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+    .heading--global {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+/* slick slider */
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+}
+
+.slick-dots li {
+    margin: 0 0.25rem;
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #68144659;
+    
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: var(--color-priamry);
+}
+
+/* pagination */
+
+.pagination {
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.pagination__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.pagination__item {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.pagination__item.active,
+.pagination__item:hover {
+    background-color: var(--color-priamry);
+    transition: all 0.3s linear;
+}
+
+/* special */
+
+.special {
+    border-top: 1px solid var(--color-priamry);
+}
+
+.special .specail__item--img img {
+    height: 30px;
+    max-width: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.special .speacial__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.special .special__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 245px;
+    padding: 10px 0;
+}
+
+.special .special__item:last-child {
+    max-width: 265px;
+}
+
+.special .special__item .special__item--content p {
+    margin-bottom: 0;
+}
+
+.special .special__item--content .title {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-priamry);
+}
+
+.special .special__item--content .desc {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--color-priamry);
+}
+
+.special .vertical-line {
+    width: 1px;
+    height: 40px;
+    background-color: var(--color-priamry);
+    display: block;
+    content: "";
+}
+
+/* breadcumb */
+
+.breadcumb {
+    margin: 30px 0;
+}
+
+.breadcumb .breadcumb__link {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-priamry);
+    margin-right: 5px;
+}
+
+.breadcumb span {
+    color: #F39C11;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+} 
+
+/* aside */
+
+.aside .aside__products {
+    margin-top: 30px;
+}
+
+.aside .aside__products--item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.aside .aside__products--img img {
+    width: 83px;
+    height: 83px;
+    object-fit: contain;
+}
+
+.aside .aside__products--name,
+.aside .aside__products--name a {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.aside .aside__products--price {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #F39C11;
+    margin-bottom: 0;
+}
+
+.aside .aside__header {
+    background-color: var(--color-priamry);
+    padding: 10px 0;
+}
+
+.aside .aside__header--heading {
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* products */
+
+.products__arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.products .products__arrows img {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+.products .products__rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.products .products__list {
+    margin-top: 18px;
+}
+
+.products .products__item {
+    border: 1px solid #E6E6E6;
+    height: 100%;
+    background-color: #FFF4FB;
+}
+
+.products .products__item:hover .products__img img {
+    transform: scale(1.04);
+    transition: all 0.3s linear;
+}
+
+.products .products__content {
+    padding: 18px 12px 28px;
+    /* height: 100%; */
+}
+
+.products .products__rate .products__rate--star img {
+    width: 18px;
+    height: auto;
+}
+
+.products .products__name {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin: 8px 0 10px;
+    display: block;
+}
+
+.products .products__price {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #f39c11;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.products .products__img {
+    height: 195px;
+    padding: 25px 0 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.products .products__img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.products .products__img img {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    transition: all 0.3s linear;
+}
+
+/* products */
+
+.hori-line {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-priamry);
+}
+
+.products {
+    padding-bottom: 120px;
+}
+
+.products__pagi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* the slides */
+.products .slick-slide {
+    margin: 0 8px;
+}
+
+/* the parent */
+.products .slick-list {
+    margin: 0 -8px;
+}
+
+.slick-track {
+    align-items: stretch;
+    display: flex;
+}
+   
+.slick-slide {
+    height: auto 
+}
+
+.slick-slide > div {
+    height: 100%;
+}
+
+.products__category--header {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--color-priamry);
+    padding: 10px;
+}
+
+.products__category--header h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.detailP__social--img:hover img {
+    transform: scale(1.08);
+    transition: all 0.3s linear;
+}
+
+.detailP__social--img img {
+    width: auto;
+    height: auto;
+    transition: all 0.3s linear;
+}
+
+.detailP__social {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.detailP__slide .slick-next.pull-right.slick-arrow img,
+.detailP__slide .slick-prev.pull-left.slick-arrow img {
+    width: 10px;
+}
+
+.detailP__slide .slick-prev.pull-left.slick-arrow img {
+    transform: rotate(180deg);
+}
+
+.detailP__slide .slick-prev:before, .detailP__slide .slick-next:before {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+
+    .aside {
+        max-width: 65%;
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    main {
+        padding-top: 74px;
+    }
+
+    .header.is-sticky .header__top .header__top--logo img {
+        width: 90px;
+    }
+
+    .header.is-sticky {
+        padding-bottom: 0;
+    }
+
+    /* special */
+
+    .special .speacial__list {
+        flex-wrap: wrap;
+    }
+
+    .special .vertical-line {
+        display: none;
+    }
+
+    .special .special__item,
+    .special .special__item:last-child {
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .special .special__item--content .title {
+        font-size: 11px;
+    }
+
+    .special .special__item--content .desc {
+        font-size: 10px;
+    }
+
+    .special .special__item--content {
+        width: 100%;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .aside {
+        max-width: 100%;
+    }
+
+    /* special */
+
+    .special .specail__item--img img {
+        height: 20px;
+        max-width: 30px;
+        width: 30px;
+    }
+
+    .special .special__item--content .desc {
+        font-size: 7px;
+        font-weight: 600;
+        line-height: 12px;
+    }
+
+    .special .special__item--content .title {
+        font-size: 8px;
+        line-height: 14px;
+    }
+
+    .footer .footer__map--iframe iframe {
+        max-width: 100%;
+    }
+}
